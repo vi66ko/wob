@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nil Picks</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+                  
+</head>
+<body>
+    <div class="container" > 
+        <div class="section">         
+        <div class="row"> <!-- First Row -->
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s2" >
+                        <input id="toteType" type="text" class="validate" required>
+                        <label for="toteType">Tote type</label>
+                    </div>
+                    <div class="input-field col s7">
+                        <input id="toteLocation" type="text" class="validate" required>
+                        <label for="toteLocation">Tote Location</label>                    
+                    </div>
+                    <!-- Field for the Quantity of a tote -->
+                    <div class="input-field col s3">
+                        <input id="quantity" type="number" class="validate" required>
+                        <label for="quantity">Quantity</label>
+                    </div>
+                </div>
+        
+                <!-- Autocomplete field for the names -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <!-- <i class="material-icons prefix">person</i> -->
+                        <input type="text" id="name" class="autocomplete" required>
+                        <label for="name">Name</label>
+                    </div>
+                </div>
+                
+                <!-- Field for the place for improvements -->
+                <div class="row">
+                
+                    <!-- Field for number of Missing books -->
+                    <div class="input-field col s3">
+                        <input id="missing" type="number" class="validate">
+                        <label for="missing">Missing</label>
+                    </div>
+                    
+                    <!-- Field for number of Misplaced books-->
+                    <div class="input-field col s3">
+                        <input id="misplaced" type="number" class="validate">
+                        <label for="misplaced">Misplaced</label>
+                    </div> <!-- End of the field for number of Misplaced books-->
+                    
+                    <!-- Filed for number of Condition Issues -->
+                    <div class="input-field col s3">
+                        <input id="conditionIssue" type="number" class="validate">
+                        <label for="conditionIssue">Condition</label>
+                    </div> <!-- End of the filed for number of Condition Issues -->
+                </div>
+
+                <!-- Filed for taken note -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="note" class="materialize-textarea"></textarea>
+                        <label for="note"> <!--  <i class="material-icons" >note</i> -->Note</label>
+                    </div>
+                </div>
+                    <!-- Field for selecting if it been spoken to the person -->
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label>
+                            <input id="spoken" type="checkbox" class="filled-in" />
+                            <span>Spoken</span>
+                            </label>
+                        </div>
+                    </div>  <!-- End of the checkbox -->
+                    
+                    <div class="row"></div>
+                    <div class="row"></div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit <i class="material-icons right">send</i></button>  
+                        </div>   
+                    </div>
+                </form>
+            </div>  <!-- End of the First Row -->              
+        </div> <!-- End of the first Section -->
+      </div> <!-- End of the Container -->
+
+
+
+
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./script.js"></script>
+</body>
+</html>
